@@ -1,0 +1,345 @@
+html {
+	background-color: #000000;
+	overflow-x: hidden;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+}
+
+#max {
+	width: 300px;
+	height: 250px;
+	background-color: rgba(255, 255, 255, 0);
+	border-top: 10px solid white;
+	border-left: 10px solid white;
+	border-right: 10px solid white;
+	border-bottom: 80px solid white;
+	transform: rotate(-10deg);
+	z-index: -1;
+	position: relative;
+	margin-top: 3%;
+	float: right;
+}
+
+#max img {
+	width: 300px;
+	height: 250px;
+}
+
+#rachel {
+	width: 300px;
+	height: 250px;
+	background-color: rgba(255, 255, 255, 0);
+	border-top: 10px solid white;
+	border-left: 10px solid white;
+	border-right: 10px solid white;
+	border-bottom: 80px solid white;
+	transform: rotate(-10deg);
+	z-index: -1;
+	position: relative;
+	float: right;
+}
+
+#rachel img {
+	width: 300px;
+	height: 250px;
+}
+
+#chloemax {
+	width: 300px;
+	height: 250px;
+	background-color: rgba(255, 255, 255, 0);
+	border-top: 10px solid white;
+	border-left: 10px solid white;
+	border-right: 10px solid white;
+	border-bottom: 80px solid white;
+	transform: rotate(10deg);
+	z-index: -1;
+	position: relative;
+	right: 7%;
+	float: right;
+}
+
+#chloemax img {
+	width: 300px;
+	height: 250px;
+}
+
+#nathan {
+	width: 300px;
+	height: 250px;
+	background-color: rgba(255, 255, 255, 0);
+	border-top: 10px solid white;
+	border-left: 10px solid white;
+	border-right: 10px solid white;
+	border-bottom: 80px solid white;
+	transform: rotate(-20deg);
+	z-index: -1;
+	position: relative;
+	margin-top: 10%;
+	float: left;
+}
+
+#nathan img {
+	width: 300px;
+	height: 250px;
+}
+
+
+#warren {
+	width: 300px;
+	height: 250px;
+	background-color: rgba(255, 255, 255, 0);
+	border-top: 10px solid white;
+	border-left: 10px solid white;
+	border-right: 10px solid white;
+	border-bottom: 80px solid white;
+	transform: rotate(-10deg);
+	z-index: -1;
+	position: relative;
+	margin-top: 3%;
+	float: left;
+}
+
+#warren img {
+	width: 300px;
+	height: 250px;
+}
+
+#chloe {
+	width: 300px;
+	height: 250px;
+	background-color: rgba(255, 255, 255, 0);
+	border-top: 10px solid white;
+	border-left: 10px solid white;
+	border-right: 10px solid white;
+	border-bottom: 80px solid white;
+	transform: rotate(-180deg);
+	z-index: -1;
+	position: relative;
+	margin-top: 3%;
+	float: left;
+}
+
+#chloe img {
+	width: 300px;
+	height: 250px;
+}
+
+#victoriataylor {
+	width: 300px;
+	height: 250px;
+	background-color: rgba(255, 255, 255, 0);
+	border-top: 10px solid white;
+	border-left: 10px solid white;
+	border-right: 10px solid white;
+	border-bottom: 80px solid white;
+	transform: rotate(30deg);
+	z-index: -1;
+	position: relative;
+	float: left;
+}
+
+#victoriataylor img {
+	width: 300px;
+	height: 250px;
+}
+
+#kate {
+	width: 300px;
+	height: 250px;
+	background-color: rgba(255, 255, 255, 0);
+	border-top: 10px solid white;
+	border-left: 10px solid white;
+	border-right: 10px solid white;
+	border-bottom: 80px solid white;
+	transform: rotate(-40deg);
+	z-index: -1;
+	position: relative;
+	margin-top: -24%;
+	float: left;
+}
+
+#kate img {
+	width: 300px;
+	height: 250px;
+}
+
+#polaroid {
+	width: 500px;
+	height: 350px;
+	background-color: rgba(255, 255, 255, 0);
+	border-top: 10px solid white;
+	border-left: 10px solid white;
+	border-right: 10px solid white;
+	border-bottom: 80px solid white;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -250px;
+	margin-top: -200px;
+	box-shadow: 0 0 40px #000000;
+	display: none;
+}
+
+#background {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -250px;
+	margin-left: -500px;
+	width: 1000px;
+	height: 500px;
+	background-color: #A52A2A;
+	box-shadow: 0 0 40px #000000;
+	border: 2px solid rgba(0, 0, 0, .8);
+}
+
+#note {
+	position: absolute;
+	float: right;
+	right: 0;
+	transform: rotate(25deg);
+	top: 10px;
+}
+
+#pin {
+	position: relative;
+	float: left;
+}
+
+#pin2 {
+	position: relative;
+	float: right;
+}
+
+#pin3 {
+	position: absolute;
+	bottom: 0;
+}
+
+#pin4 {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+#TitleScreen {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -225px;
+	margin-left: -400px;
+}
+
+#Storm {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -225px;
+	margin-left: -400px;
+	display: none;
+}
+
+#TitleScreen img {
+	width: 800px;
+	border-radius: 52%;
+	box-shadow: 0 0 40px #000000;
+	border: 5px solid rgba(0, 0, 0, .8);
+}
+
+#Storm img {
+	width: 800px;
+	border-radius: 52%;
+	animation: flash 1s alternate infinite;
+}
+
+@keyframes flash {
+  	from {box-shadow: 0 0 10px rgba(255, 255, 255, .7);}
+  	to {box-shadow: 0 0 20px #800000, 0 0 20px ivory;}
+}
+
+#polaroid video {
+	width: 500px;
+	height: 350px;
+}
+
+.black {
+	width: 500px;
+	height: 350px;
+	background-color: #000000;
+}
+
+#butterfly {
+	position: absolute;
+	margin-top: 2%;
+	left: 2%;
+	width: 40px;
+	display: none;
+}
+
+#butterfly img {
+	transform: rotate(-15deg);
+	animation: butterflyglow 2s alternate infinite;
+}
+
+#butterfly2 {
+	position: absolute;
+	margin-top: 2%;
+	left: 2%;
+	width: 40px;
+	display: none;
+}
+
+#butterfly2 img {
+	transform: rotate(-15deg);
+	animation: butterflyglow 2s alternate infinite;
+}
+
+@keyframes butterflyglow {
+	from {filter: drop-shadow(2px 2px 2px gold);}
+	to {filter: drop-shadow(5px 5px 5px green);}
+}
+
+#camera {
+	position: absolute;
+	margin-top: 2%;
+	left: 2%;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	animation: glow 1s alternate infinite;
+	display: none;
+}
+
+#camera img {
+	animation: sway 2s alternate infinite;
+}
+
+#camera2 {
+	position: absolute;
+	margin-top: 2%;
+	left: 2%;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	animation: glow 1s alternate infinite;
+	display: none;
+}
+
+#camera2 img {
+	animation: sway 2s alternate infinite;
+}
+
+@keyframes glow {
+  	from {box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);}
+  	to {box-shadow: 0 0 50px gold, 0 0 150px gold;}
+}
+
+@keyframes sway {
+	from {transform: rotate(-10deg);}
+	to {transform: rotate(10deg);}
+}

@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<title>Life is Strange</title>
+</head>
+<body>
+
+<div id="opacity">
+	<div id="max"><img src="images/max.jpg"/></div>
+	<div id="rachel"><img src="images/rachel.jpg"/></div>
+	<div id="chloemax"><img src="images/chloemax.jpg"/></div>
+	<div id="nathan"><img src="images/nathan.png"/></div>
+	<div id="warren"><img src="images/warren.jpg"/></div>
+	<div id="chloe"><img src="images/chloe.png"/></div>
+	<div id="victoriataylor"><img src="images/victoriataylor.png"/></div>
+	<div id="kate"><img src="images/kate.jpg"/></div>
+	<div id="background">
+		<div id="pin"><img src="images/pin.png" width="30"/></div>
+		<div id="pin2"><img src="images/pin.png" width="30"/></div>
+		<div id="pin3"><img src="images/pin.png" width="30"/></div>
+		<div id="pin4"><img src="images/pin.png" width="30"/></div>
+		<div id="note"><a href="https://www.youtube.com/watch?v=1-tqOIs3l50" target="_blank"><img src="images/note.png" width="200"/></a></div>
+		<div id="TitleScreen"><img src="images/TitleScreen.gif"/></div>
+		<div id="Storm"><img src="images/Storm.gif"/></div>
+	</div>
+</div>
+	<div id="polaroid">
+		<div class="black">
+			<video controls><source src="videos/LIS.mp4"><source src="videos/LIS.ogg"></video>
+		</div>
+	</div>
+	<div id="camera"><a href="#" onmousedown="photo.play(), TitleScreenMusic.pause()"><img src="images/camera.png" width="80"/></a></div>
+	<div id="camera2"><a href="#" onmousedown="photo.play(), StormMusic.pause()"><img src="images/camera.png" width="80"/></a></div>
+	<div id="butterfly"><a href="#" onmousedown="StormMusic.play()"><img src="images/butterfly.png" width="80"/></a></div>
+	<div id="butterfly2"><a href="#" onmousedown="TitleScreenMusic.play()"><img src="images/butterfly.png" width="80"/></a></div>
+
+<script>
+
+var photo = new Audio();
+photo.src = "sounds/photo.mp3";
+
+var TitleScreenMusic = new Audio();
+TitleScreenMusic.src = "sounds/TitleScreenMusic.mp3";
+TitleScreenMusic.loop = true
+
+var StormMusic = new Audio();
+StormMusic.src = "sounds/StormMusic.mp3";
+StormMusic.loop = true
+
+TitleScreenMusic.play();
+
+$(document).ready(function(){
+	setTimeout(function(){
+		$('#camera').show();
+	}, 1000);
+		$('#camera').click(function(){
+			$('#opacity').css({opacity: 0.1});
+			$('#camera').fadeOut();
+			$('#butterfly').fadeIn();
+			$('#polaroid').show(1000);
+			$('#polaroid video').get(0).play();
+		});
+		$('#butterfly').click(function(){
+			$('#opacity').css({opacity: 10});
+			$('#TitleScreen').hide();
+			$('#Storm').fadeIn();
+			$('#polaroid video').trigger("pause");
+			$('#polaroid').hide();
+			$('#butterfly').fadeOut();
+			$('#camera2').fadeIn();
+		});
+		$('#camera2').click(function(){
+			$('#opacity').css({opacity: 0.1});
+			$('#polaroid').show(1000);
+			$('#polaroid video').get(0).play();
+			$('#camera2').fadeOut();
+			$('#butterfly2').fadeIn();
+		});
+		$('#butterfly2').click(function(){
+			$('#opacity').css({opacity: 10});
+			$('#Storm').hide();
+			$('#TitleScreen').fadeIn();
+			$('#polaroid video').trigger("pause");
+			$('#polaroid').hide();
+			$('#butterfly2').fadeOut();
+			$('#camera').fadeIn();
+		});
+});
+</script>
+</body>
+</html>
